@@ -1,0 +1,64 @@
+$color-pack = false
+$btn-gradient = linear-gradient(45deg, #ff3177, #f4ad36)
+
+$mobileH = 680px
+
+@import '~vuetify/src/stylus/main'
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700');
+
+body
+  background-color #222
+
+.mock-mobile
+  max-width 420px
+  min-height $mobileH
+  border-radius 10px
+  overflow hidden
+
+  .application--wrap
+    display block
+    min-height auto
+
+  .match
+    height $mobileH
+
+.match
+  background-color #3c3c3c
+
+  .v-avatar
+    box-sizing content-box
+    border 3px solid #eee
+
+  .cursive-title
+    font-family 'Dancing Script', cursive
+    font-size 3.5rem
+
+  .action .v-btn
+    width 100%
+    background $btn-gradient
+
+.rsvp
+  .fade
+    &-enter-active, &-leave-active, &-leave-to
+      transition: .3s ease-out
+      position: absolute
+      top: 0
+      left: 0
+
+    &-enter, &-leave, &-leave-to
+      opacity: 0
+
+  .action .v-btn
+    border 10px solid #eee
+    height 60px
+    width 60px
+
+    &.v-btn--large
+      width 120px
+      height 120px
+      margin 20px -30px
+
+      .v-icon
+        font-size 44px
+
+    
